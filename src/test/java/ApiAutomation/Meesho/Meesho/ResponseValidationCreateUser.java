@@ -23,7 +23,7 @@ public class ResponseValidationCreateUser {
 	        this.postResponse = response;
 	        gson = new Gson();
 	        CreateUserResponsePojo getDetailsByPage = gson.fromJson(response.asString(), CreateUserResponsePojo.class);
-	        setId(getDetailsByPage.);
+	        
 	        Assert.assertEquals(response.getStatusCode(), 201);
 	       
 	    }
